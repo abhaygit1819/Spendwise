@@ -6,8 +6,7 @@ import React, { useState, useEffect } from 'react';
 // At the Transport Layer (Layer 4), this resolves to the loopback IP address 
 // (127.0.0.1) bound to TCP port 5000 via OS Network Sockets.
 // ============================================================================
-const API_BASE_URL = 'http://localhost:5000/api';
-
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 // ============================================================================
 // DATA STRUCTURES (STATIC HASH MAP)
 // In memory, this object is evaluated as a static Key-Value store. 
