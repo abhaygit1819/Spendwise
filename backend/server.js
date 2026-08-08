@@ -34,6 +34,15 @@ app.use(cors());
  * - The actual parsed object structure dynamically occupies memory space on the HEAP.
  */
 app.use(express.json());
+
+// Root route
+app.get("/", (req, res) => {
+    res.json({
+        status: "success",
+        message: "🚀 SpendWise Backend API is running!",
+        api: "/api/expenses"
+    });
+});
                                                
 /* 
  * =========================================================================
